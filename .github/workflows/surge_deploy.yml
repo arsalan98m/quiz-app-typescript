@@ -26,6 +26,11 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
+      # Pemisson
+      - name: Setting Permission
+        run : sudo npm install -g --unsafe-perm
+        
+        
       # Installing Yarn package manager
       -  name: Installing yarn
          uses: borales/actions-yarn@v2.0.0
